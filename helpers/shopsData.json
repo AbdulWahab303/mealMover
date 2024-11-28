@@ -1,0 +1,399 @@
+[
+    {
+        "name": "KFC",
+        "image": "/shops/kfc/KFC.jpg",
+        "details": {
+            "timing": "12pm-10pm",
+            "location": "Johar Town, Lahore",
+            "address": "Near Emporium Mall, Johar Town, Lahore",
+            "description": "KFC is a fast-food chain known for its fried chicken and zinger burgers.",
+            "comments": [
+                "Amazing taste!",
+                "Tasty and crispy chicken."
+            ]
+        },
+        "menu": [
+            {
+                "name": "Mighty Zinger",
+                "description": "Double zinger patty with loads of sauces",
+                "price": 800,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Burgers",
+                "customization": [
+                    {
+                        "option": "Cheese",
+                        "price": 50
+                    }
+                ],
+                "featured": true
+            },
+            {
+                "name": "Chicken Bucket",
+                "description": "8 pieces of crispy fried chicken",
+                "price": 1600,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Chicken",
+                "customization": [],
+                "featured": true
+            },
+            {
+                "name": "Zinger Burger",
+                "description": "A crispy chicken fillet burger with lettuce and mayo",
+                "price": 500,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Burgers",
+                "customization": [],
+                "featured": false
+            },
+            {
+                "name": "Twister Wrap",
+                "description": "Grilled chicken wrap with spicy mayo and fresh vegetables",
+                "price": 550,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Wraps",
+                "customization": [],
+                "featured": false
+            },
+            {
+                "name": "Hot Wings",
+                "description": "6 spicy and crispy chicken wings",
+                "price": 400,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Snacks",
+                "customization": [],
+                "featured": false
+            },
+            {
+                "name": "Popcorn Chicken",
+                "description": "Small crispy chicken bites",
+                "price": 300,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Snacks",
+                "customization": [],
+                "featured": false
+            },
+            {
+                "name": "French Fries",
+                "description": "Crispy golden fries",
+                "price": 150,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Sides",
+                "customization": [
+                    {
+                        "option": "Large",
+                        "price": 50
+                    }
+                ],
+                "featured": false
+            },
+            {
+                "name": "Krushers",
+                "description": "A chilled creamy beverage in various flavors",
+                "price": 250,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Drinks",
+                "customization": [
+                    {
+                        "option": "Chocolate",
+                        "price": 0
+                    },
+                    {
+                        "option": "Strawberry",
+                        "price": 0
+                    }
+                ],
+                "featured": true
+            },
+            {
+                "name": "Chocolate Lava Cake",
+                "description": "A warm chocolate cake with a gooey center",
+                "price": 350,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Desserts",
+                "customization": [],
+                "featured": false
+            },
+            {
+                "name": "Rice and Spice",
+                "description": "Spicy rice served with crispy chicken and tangy sauce",
+                "price": 650,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Meals",
+                "customization": [],
+                "featured": true
+            }
+        ],
+        "featured": true,
+        "reviews": 5
+    },
+    {
+        "name": "Salt'n Pepper",
+        "image": "/shops/kfc/KFC.jpg",
+        "details": {
+            "timing": "12pm-11pm",
+            "location": "MM Alam Road, Lahore",
+            "address": "Opposite Mall One, MM Alam Road, Lahore",
+            "description": "Salt'n Pepper is one of the pioneers of the Pakistani dining industry.",
+            "comments": [
+                "Great ambiance and food!",
+                "Best Pakistani cuisine."
+            ]
+        },
+        "menu": [
+            {
+                "name": "Chicken Handi",
+                "description": "Rich creamy chicken curry",
+                "price": 1200,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Curry",
+                "customization": [
+                    {
+                        "option": "Extra Spice",
+                        "price": 30
+                    }
+                ],
+                "featured": true
+            },
+            {
+                "name": "BBQ Platter",
+                "description": "A mix of BBQ kebabs, chicken tikka, and more.",
+                "price": 1500,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "BBQ",
+                "customization": [],
+                "featured": false
+            }
+        ],
+        "featured": true,
+        "reviews": 4
+    },
+    {
+        "name": "Salt'n Pepper",
+        "image": "/shops/kfc/KFC.jpg",
+        "details": {
+            "timing": "12pm-11pm",
+            "location": "MM Alam Road, Lahore",
+            "address": "Opposite Mall One, MM Alam Road, Lahore",
+            "description": "Salt'n Pepper is one of the pioneers of the Pakistani dining industry.",
+            "comments": [
+                "Great ambiance and food!",
+                "Best Pakistani cuisine."
+            ]
+        },
+        "menu": [
+            {
+                "name": "Chicken Handi",
+                "description": "Rich creamy chicken curry",
+                "price": 1200,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Curry",
+                "customization": [
+                    {
+                        "option": "Extra Spice",
+                        "price": 30
+                    }
+                ],
+                "featured": true
+            },
+            {
+                "name": "BBQ Platter",
+                "description": "A mix of BBQ kebabs, chicken tikka, and more.",
+                "price": 1500,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "BBQ",
+                "customization": [],
+                "featured": false
+            },
+            {
+                "name": "Tawa Chicken",
+                "description": "Spicy and flavorful chicken cooked on a flat grill.",
+                "price": 1300,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Chicken",
+                "customization": [
+                    {
+                        "option": "Extra Butter",
+                        "price": 50
+                    }
+                ],
+                "featured": true
+            },
+            {
+                "name": "Chicken Biryani",
+                "description": "Aromatic basmati rice cooked with chicken and traditional spices.",
+                "price": 1000,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Rice",
+                "customization": [
+                    {
+                        "option": "Extra Raita",
+                        "price": 20
+                    }
+                ],
+                "featured": true
+            },
+            {
+                "name": "Prawn Masala",
+                "description": "Succulent prawns cooked in a spicy masala gravy.",
+                "price": 1800,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Seafood",
+                "customization": [],
+                "featured": false
+            },
+            {
+                "name": "Mutton Chops",
+                "description": "Tender and juicy mutton chops grilled to perfection.",
+                "price": 2000,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "BBQ",
+                "customization": [
+                    {
+                        "option": "Extra Sauce",
+                        "price": 50
+                    }
+                ],
+                "featured": false
+            },
+            {
+                "name": "Seekh Kebabs",
+                "description": "Spiced minced meat skewers cooked over a charcoal grill.",
+                "price": 800,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "BBQ",
+                "customization": [],
+                "featured": false
+            }
+        ],
+        "featured": true,
+        "reviews": 4
+    },
+    {
+        "name": "McDonald's",
+        "image": "https://example.com/images/mcdonalds.jpg",
+        "details": {
+            "timing": "24/7",
+            "location": "Packages Mall, Lahore",
+            "address": "Packages Mall, Walton Road, Lahore",
+            "description": "International fast food chain famous for burgers and fries.",
+            "comments": [
+                "Quick service!",
+                "Loved the Big Mac."
+            ]
+        },
+        "menu": [
+            {
+                "name": "Big Mac",
+                "description": "Double beef patty with cheese and signature Big Mac sauce",
+                "price": 750,
+                "image": "https://example.com/images/big-mac.jpg",
+                "availability": true,
+                "category": "Burgers",
+                "customization": [
+                    {
+                        "option": "Extra Patty",
+                        "price": 200
+                    }
+                ],
+                "featured": true
+            },
+            {
+                "name": "McChicken",
+                "description": "Crispy chicken sandwich with lettuce and mayo",
+                "price": 550,
+                "image": "https://example.com/images/mcchicken.jpg",
+                "availability": true,
+                "category": "Burgers",
+                "customization": [],
+                "featured": false
+            },
+            {
+                "name": "French Fries",
+                "description": "Golden crispy fries",
+                "price": 250,
+                "image": "https://example.com/images/french-fries.jpg",
+                "availability": true,
+                "category": "Sides",
+                "customization": [
+                    {
+                        "option": "Large",
+                        "price": 100
+                    }
+                ],
+                "featured": false
+            },
+            {
+                "name": "McFlurry",
+                "description": "Creamy soft serve ice cream blended with chocolate or caramel topping",
+                "price": 300,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Desserts",
+                "customization": [
+                    {
+                        "option": "Extra Topping",
+                        "price": 50
+                    }
+                ],
+                "featured": false
+            },
+            {
+                "name": "Chicken Nuggets",
+                "description": "Crispy and tender chicken nuggets (6 pieces)",
+                "price": 400,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Snacks",
+                "customization": [
+                    {
+                        "option": "Extra Sauce",
+                        "price": 20
+                    }
+                ],
+                "featured": false
+            },
+            {
+                "name": "Filet-O-Fish",
+                "description": "Fish fillet sandwich with tartar sauce and cheese",
+                "price": 650,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Burgers",
+                "customization": [],
+                "featured": false
+            },
+            {
+                "name": "Happy Meal",
+                "description": "A kids' meal with a choice of burger or nuggets, fries, and a toy",
+                "price": 500,
+                "image": "/shops/kfc/KFC.jpg",
+                "availability": true,
+                "category": "Meals",
+                "customization": [],
+                "featured": true
+            }
+        ],
+        "featured": true,
+        "reviews": 5
+    }
+    
+]
