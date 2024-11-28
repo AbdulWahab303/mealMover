@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Array of image URLs (replace these placeholders with your image links)
-  const images = [
-    '/hero1.png',
-    '/hero1.png',
-    '/hero1.png',
-    '/hero1.png',
-  ];
+  const images = ["/hero1.png", "/hero1.png", "/hero1.png", "/hero1.png"];
 
   // Auto-slide logic
   useEffect(() => {
@@ -33,12 +28,12 @@ const HeroSection = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="w-full h-full justify-center flex-shrink-0"
+            className="w-full h-full justify-center flex-shrink-0 "
           >
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-1/6 h-auto object-cover mx-60"
+              className="h-auto object-contain scale-y-[0.60] -translate-y-[9.5rem]"
             />
           </div>
         ))}
@@ -51,8 +46,8 @@ const HeroSection = () => {
             key={index}
             className={`w-3 h-3 rounded-full ${
               currentSlide === index
-                ? 'bg-yellow-500'
-                : 'bg-gray-300 hover:bg-gray-500'
+                ? "bg-yellow-500"
+                : "bg-gray-300 hover:bg-gray-500"
             }`}
             onClick={() => setCurrentSlide(index)}
             aria-label={`Go to slide ${index + 1}`}
