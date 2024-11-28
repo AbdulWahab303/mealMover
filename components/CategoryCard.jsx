@@ -11,7 +11,7 @@ const CategoryCard = ({ category }) => {
             layout="fill"
             objectFit="cover"
             className="rounded-full transition-transform duration-500 ease-in-out transform group-hover:scale-105"
-            alt="Chinese Cuisine"
+            alt="Cuisine Image"
           />
         </div>
       </div>

@@ -1,8 +1,8 @@
-import Restaurants from "@/components/Restaurants";
+import { MenuItems } from "@/components/MenuItems";
 import React from "react";
 
 const testing = () => {
-  return <Restaurants></Restaurants>;
+  return <MenuItems></MenuItems>;
 };
 
 export default testing;
