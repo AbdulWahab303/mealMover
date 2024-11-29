@@ -1,399 +1,966 @@
 [
-    {
-        "name": "KFC",
-        "image": "/shops/kfc/KFC.jpg",
-        "details": {
-            "timing": "12pm-10pm",
-            "location": "Johar Town, Lahore",
-            "address": "Near Emporium Mall, Johar Town, Lahore",
-            "description": "KFC is a fast-food chain known for its fried chicken and zinger burgers.",
-            "comments": [
-                "Amazing taste!",
-                "Tasty and crispy chicken."
-            ]
-        },
-        "menu": [
-            {
-                "name": "Mighty Zinger",
-                "description": "Double zinger patty with loads of sauces",
-                "price": 800,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Burgers",
-                "customization": [
-                    {
-                        "option": "Cheese",
-                        "price": 50
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "name": "Chicken Bucket",
-                "description": "8 pieces of crispy fried chicken",
-                "price": 1600,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Chicken",
-                "customization": [],
-                "featured": true
-            },
-            {
-                "name": "Zinger Burger",
-                "description": "A crispy chicken fillet burger with lettuce and mayo",
-                "price": 500,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Burgers",
-                "customization": [],
-                "featured": false
-            },
-            {
-                "name": "Twister Wrap",
-                "description": "Grilled chicken wrap with spicy mayo and fresh vegetables",
-                "price": 550,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Wraps",
-                "customization": [],
-                "featured": false
-            },
-            {
-                "name": "Hot Wings",
-                "description": "6 spicy and crispy chicken wings",
-                "price": 400,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Snacks",
-                "customization": [],
-                "featured": false
-            },
-            {
-                "name": "Popcorn Chicken",
-                "description": "Small crispy chicken bites",
-                "price": 300,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Snacks",
-                "customization": [],
-                "featured": false
-            },
-            {
-                "name": "French Fries",
-                "description": "Crispy golden fries",
-                "price": 150,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Sides",
-                "customization": [
-                    {
-                        "option": "Large",
-                        "price": 50
-                    }
-                ],
-                "featured": false
-            },
-            {
-                "name": "Krushers",
-                "description": "A chilled creamy beverage in various flavors",
-                "price": 250,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Drinks",
-                "customization": [
-                    {
-                        "option": "Chocolate",
-                        "price": 0
-                    },
-                    {
-                        "option": "Strawberry",
-                        "price": 0
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "name": "Chocolate Lava Cake",
-                "description": "A warm chocolate cake with a gooey center",
-                "price": 350,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Desserts",
-                "customization": [],
-                "featured": false
-            },
-            {
-                "name": "Rice and Spice",
-                "description": "Spicy rice served with crispy chicken and tangy sauce",
-                "price": 650,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Meals",
-                "customization": [],
-                "featured": true
-            }
-        ],
-        "featured": true,
-        "reviews": 5
+  {
+    "name": "KFC",
+    "image": "/shops/kfc/kfc.jpg",
+    "details": {
+      "timing": "12pm-10pm",
+      "location": "Johar Town, Lahore",
+      "address": "Near Emporium Mall, Johar Town, Lahore",
+      "description": "KFC is a fast-food chain known for its fried chicken and zinger burgers.",
+      "comments": ["Amazing taste!", "Tasty and crispy chicken."]
     },
-    {
-        "name": "Salt'n Pepper",
-        "image": "/shops/kfc/KFC.jpg",
-        "details": {
-            "timing": "12pm-11pm",
-            "location": "MM Alam Road, Lahore",
-            "address": "Opposite Mall One, MM Alam Road, Lahore",
-            "description": "Salt'n Pepper is one of the pioneers of the Pakistani dining industry.",
-            "comments": [
-                "Great ambiance and food!",
-                "Best Pakistani cuisine."
-            ]
-        },
-        "menu": [
-            {
-                "name": "Chicken Handi",
-                "description": "Rich creamy chicken curry",
-                "price": 1200,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Curry",
-                "customization": [
-                    {
-                        "option": "Extra Spice",
-                        "price": 30
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "name": "BBQ Platter",
-                "description": "A mix of BBQ kebabs, chicken tikka, and more.",
-                "price": 1500,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "BBQ",
-                "customization": [],
-                "featured": false
-            }
+    "menu": [
+      {
+        "name": "Mighty Zinger",
+        "description": "Double zinger patty with loads of sauces",
+        "price": 800,
+        "image": "/shop/kfc/Menu/MightyZinger.png",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [
+          {
+            "option": "Cheese",
+            "price": 50
+          }
         ],
-        "featured": true,
-        "reviews": 4
+        "featured": true
+      },
+      {
+        "name": "Chicken Bucket",
+        "description": "8 pieces of crispy fried chicken",
+        "price": 1600,
+        "image": "/shop/kfc/Menu/ChickenBucket.png",
+        "availability": true,
+        "category": "Chicken",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "Zinger Burger",
+        "description": "A crispy chicken fillet burger with lettuce and mayo",
+        "price": 500,
+        "image": "/shop/kfc/Menu/ZingerBurger.png",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Twister Wrap",
+        "description": "Grilled chicken wrap with spicy mayo and fresh vegetables",
+        "price": 550,
+        "image": "/shop/kfc/Menu/TwisterWrap.jpg",
+        "availability": true,
+        "category": "Wraps",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Hot Wings",
+        "description": "6 spicy and crispy chicken wings",
+        "price": 400,
+        "image": "/shop/kfc/Menu/HotWings.png",
+        "availability": true,
+        "category": "Snacks",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Popcorn Chicken",
+        "description": "Small crispy chicken bites",
+        "price": 300,
+        "image": "/shop/kfc/Menu/PopcornChicken.png",
+        "availability": true,
+        "category": "Snacks",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "French Fries",
+        "description": "Crispy golden fries",
+        "price": 150,
+        "image": "/shop/kfc/Menu/FrenchFries.png",
+        "availability": true,
+        "category": "Sides",
+        "customization": [
+          {
+            "option": "Large",
+            "price": 50
+          }
+        ],
+        "featured": false
+      },
+      {
+        "name": "Rice and Spice",
+        "description": "Spicy rice served with crispy chicken and tangy sauce",
+        "price": 650,
+        "image": "/shop/kfc/Menu/RiceandSpice.png",
+        "availability": true,
+        "category": "Meals",
+        "customization": [],
+        "featured": true
+      }
+    ],
+    "featured": true,
+    "reviews": 5
+  },
+  {
+    "name": "Salt'n Pepper",
+    "image": "/shop/Salt'n Pepper/Salt'n Pepper.png",
+    "details": {
+      "timing": "12pm-11pm",
+      "location": "MM Alam Road, Lahore",
+      "address": "Opposite Mall One, MM Alam Road, Lahore",
+      "description": "Salt'n Pepper is one of the pioneers of the Pakistani dining industry.",
+      "comments": ["Great ambiance and food!", "Best Pakistani cuisine."]
     },
-    {
-        "name": "Salt'n Pepper",
-        "image": "/shops/kfc/KFC.jpg",
-        "details": {
-            "timing": "12pm-11pm",
-            "location": "MM Alam Road, Lahore",
-            "address": "Opposite Mall One, MM Alam Road, Lahore",
-            "description": "Salt'n Pepper is one of the pioneers of the Pakistani dining industry.",
-            "comments": [
-                "Great ambiance and food!",
-                "Best Pakistani cuisine."
-            ]
-        },
-        "menu": [
-            {
-                "name": "Chicken Handi",
-                "description": "Rich creamy chicken curry",
-                "price": 1200,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Curry",
-                "customization": [
-                    {
-                        "option": "Extra Spice",
-                        "price": 30
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "name": "BBQ Platter",
-                "description": "A mix of BBQ kebabs, chicken tikka, and more.",
-                "price": 1500,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "BBQ",
-                "customization": [],
-                "featured": false
-            },
-            {
-                "name": "Tawa Chicken",
-                "description": "Spicy and flavorful chicken cooked on a flat grill.",
-                "price": 1300,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Chicken",
-                "customization": [
-                    {
-                        "option": "Extra Butter",
-                        "price": 50
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "name": "Chicken Biryani",
-                "description": "Aromatic basmati rice cooked with chicken and traditional spices.",
-                "price": 1000,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Rice",
-                "customization": [
-                    {
-                        "option": "Extra Raita",
-                        "price": 20
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "name": "Prawn Masala",
-                "description": "Succulent prawns cooked in a spicy masala gravy.",
-                "price": 1800,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Seafood",
-                "customization": [],
-                "featured": false
-            },
-            {
-                "name": "Mutton Chops",
-                "description": "Tender and juicy mutton chops grilled to perfection.",
-                "price": 2000,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "BBQ",
-                "customization": [
-                    {
-                        "option": "Extra Sauce",
-                        "price": 50
-                    }
-                ],
-                "featured": false
-            },
-            {
-                "name": "Seekh Kebabs",
-                "description": "Spiced minced meat skewers cooked over a charcoal grill.",
-                "price": 800,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "BBQ",
-                "customization": [],
-                "featured": false
-            }
+    "menu": [
+      {
+        "name": "Chicken Handi",
+        "description": "Rich creamy chicken curry",
+        "price": 1200,
+        "image": "/shop/Salt'n Pepper/Menu/ChickenHandi.jpg",
+        "availability": true,
+        "category": "Curry",
+        "customization": [
+          {
+            "option": "Extra Spice",
+            "price": 30
+          }
         ],
-        "featured": true,
-        "reviews": 4
+        "featured": true
+      },
+      {
+        "name": "BBQ Platter",
+        "description": "A mix of BBQ kebabs, chicken tikka, and more.",
+        "price": 1500,
+        "image": "/shop/Salt'n Pepper/Menu/BBQPlatter.jpg",
+        "availability": true,
+        "category": "BBQ",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Tawa Chicken",
+        "description": "Spicy and flavorful chicken cooked on a flat grill.",
+        "price": 1300,
+        "image": "/shop/Salt'n Pepper/Menu/TawaChicken.jpg",
+        "availability": true,
+        "category": "Chicken",
+        "customization": [
+          {
+            "option": "Extra Butter",
+            "price": 50
+          }
+        ],
+        "featured": true
+      },
+      {
+        "name": "Chicken Biryani",
+        "description": "Aromatic basmati rice cooked with chicken and traditional spices.",
+        "price": 1000,
+        "image": "/shop/Salt'n Pepper/Menu/ChickenBiryani.jpg",
+        "availability": true,
+        "category": "Rice",
+        "customization": [
+          {
+            "option": "Extra Raita",
+            "price": 20
+          }
+        ],
+        "featured": true
+      },
+      {
+        "name": "Prawn Masala",
+        "description": "Succulent prawns cooked in a spicy masala gravy.",
+        "price": 1800,
+        "image": "/shop/Salt'n Pepper/Menu/PrawnMasala.jpg",
+        "availability": true,
+        "category": "Seafood",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Mutton Chops",
+        "description": "Tender and juicy mutton chops grilled to perfection.",
+        "price": 2000,
+        "image": "/shop/Salt'n Pepper/Menu/MuttonChops.webp",
+        "availability": true,
+        "category": "BBQ",
+        "customization": [
+          {
+            "option": "Extra Sauce",
+            "price": 50
+          }
+        ],
+        "featured": false
+      },
+      {
+        "name": "Seekh Kebabs",
+        "description": "Spiced minced meat skewers cooked over a charcoal grill.",
+        "price": 800,
+        "image": "/shop/Salt'n Pepper/Menu/SeekhKebabs.jpg",
+        "availability": true,
+        "category": "BBQ",
+        "customization": [],
+        "featured": false
+      }
+    ],
+    "featured": true,
+    "reviews": 4
+  },
+  {
+    "name": "McDonald's",
+    "image": "/shop/McDonald's/McDonald's.webp",
+    "details": {
+      "timing": "24/7",
+      "location": "Packages Mall, Lahore",
+      "address": "Packages Mall, Walton Road, Lahore",
+      "description": "International fast food chain famous for burgers and fries.",
+      "comments": ["Quick service!", "Loved the Big Mac."]
     },
-    {
-        "name": "McDonald's",
-        "image": "https://example.com/images/mcdonalds.jpg",
-        "details": {
-            "timing": "24/7",
-            "location": "Packages Mall, Lahore",
-            "address": "Packages Mall, Walton Road, Lahore",
-            "description": "International fast food chain famous for burgers and fries.",
-            "comments": [
-                "Quick service!",
-                "Loved the Big Mac."
-            ]
-        },
-        "menu": [
-            {
-                "name": "Big Mac",
-                "description": "Double beef patty with cheese and signature Big Mac sauce",
-                "price": 750,
-                "image": "https://example.com/images/big-mac.jpg",
-                "availability": true,
-                "category": "Burgers",
-                "customization": [
-                    {
-                        "option": "Extra Patty",
-                        "price": 200
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "name": "McChicken",
-                "description": "Crispy chicken sandwich with lettuce and mayo",
-                "price": 550,
-                "image": "https://example.com/images/mcchicken.jpg",
-                "availability": true,
-                "category": "Burgers",
-                "customization": [],
-                "featured": false
-            },
-            {
-                "name": "French Fries",
-                "description": "Golden crispy fries",
-                "price": 250,
-                "image": "https://example.com/images/french-fries.jpg",
-                "availability": true,
-                "category": "Sides",
-                "customization": [
-                    {
-                        "option": "Large",
-                        "price": 100
-                    }
-                ],
-                "featured": false
-            },
-            {
-                "name": "McFlurry",
-                "description": "Creamy soft serve ice cream blended with chocolate or caramel topping",
-                "price": 300,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Desserts",
-                "customization": [
-                    {
-                        "option": "Extra Topping",
-                        "price": 50
-                    }
-                ],
-                "featured": false
-            },
-            {
-                "name": "Chicken Nuggets",
-                "description": "Crispy and tender chicken nuggets (6 pieces)",
-                "price": 400,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Snacks",
-                "customization": [
-                    {
-                        "option": "Extra Sauce",
-                        "price": 20
-                    }
-                ],
-                "featured": false
-            },
-            {
-                "name": "Filet-O-Fish",
-                "description": "Fish fillet sandwich with tartar sauce and cheese",
-                "price": 650,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Burgers",
-                "customization": [],
-                "featured": false
-            },
-            {
-                "name": "Happy Meal",
-                "description": "A kids' meal with a choice of burger or nuggets, fries, and a toy",
-                "price": 500,
-                "image": "/shops/kfc/KFC.jpg",
-                "availability": true,
-                "category": "Meals",
-                "customization": [],
-                "featured": true
-            }
+    "menu": [
+      {
+        "name": "Big Mac",
+        "description": "Double beef patty with cheese and signature Big Mac sauce",
+        "price": 750,
+        "image": "/shop/McDonald's/Menu/BigMac.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [
+          {
+            "option": "Extra Patty",
+            "price": 200
+          }
         ],
-        "featured": true,
-        "reviews": 5
-    }
-    
+        "featured": true
+      },
+      {
+        "name": "McChicken",
+        "description": "Crispy chicken sandwich with lettuce and mayo",
+        "price": 550,
+        "image": "/shop/McDonald's/Menu/McChicken.webp",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "French Fries",
+        "description": "Golden crispy fries",
+        "price": 250,
+        "image": "/shop/McDonald's/Menu/FrenchFries.jpg",
+        "availability": true,
+        "category": "Sides",
+        "customization": [
+          {
+            "option": "Large",
+            "price": 100
+          }
+        ],
+        "featured": false
+      },
+      {
+        "name": "McFlurry",
+        "description": "Creamy soft serve ice cream blended with chocolate or caramel topping",
+        "price": 300,
+        "image": "/shop/McDonald's/Menu/McFlurry.jpg",
+        "availability": true,
+        "category": "Desserts",
+        "customization": [
+          {
+            "option": "Extra Topping",
+            "price": 50
+          }
+        ],
+        "featured": false
+      },
+      {
+        "name": "Chicken Nuggets",
+        "description": "Crispy and tender chicken nuggets (6 pieces)",
+        "price": 400,
+        "image": "/shop/McDonald's/Menu/ChickenNuggets.jpg",
+        "availability": true,
+        "category": "Snacks",
+        "customization": [
+          {
+            "option": "Extra Sauce",
+            "price": 20
+          }
+        ],
+        "featured": false
+      },
+      {
+        "name": "Filet-O-Fish",
+        "description": "Fish fillet sandwich with tartar sauce and cheese",
+        "price": 650,
+        "image": "/shop/McDonald's/Menu/Filet-O-Fish.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Happy Meal",
+        "description": "A kids' meal with a choice of burger or nuggets, fries, and a toy",
+        "price": 500,
+        "image": "/shop/McDonald's/Menu/HappyMeal.png",
+        "availability": true,
+        "category": "Meals",
+        "customization": [],
+        "featured": true
+      }
+    ],
+    "featured": true,
+    "reviews": 5
+  },
+  {
+    "name": "Kababjees Fried Chicken",
+    "image": "/shop/Kababjees Fried Chicken/Kababjees Fried Chicken.png",
+    "details": {
+      "timing": "11 AM - 11 PM",
+      "location": "Ocean Mall, Karachi",
+      "address": "Ocean Mall, Clifton, Karachi",
+      "description": "Delicious fried chicken and burgers with a variety of options for all taste buds.",
+      "comments": ["Best crispy chicken!", "Loved the Zenga Burger."]
+    },
+    "menu": [
+      {
+        "name": "Mega Snack Box",
+        "description": "9 Pcs Crispy Fried Chicken (Selecting Chicken part is not Applicable on promotion Set)",
+        "price": 2050,
+        "image": "/shop/Kababjees Fried Chicken/Menu/MegaSnackBox.jpg",
+        "availability": true,
+        "category": "Meals",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "Chick N Crunch Burger",
+        "description": "Crispy goodness, made of chest chicken meat. Along with Al Baik Sauce.",
+        "price": 310,
+        "image": "/shop/Kababjees Fried Chicken/Menu/ChickNCrunchBurger.webp",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Zenga Burger",
+        "description": "Crispy goodness, made of thigh chicken meat making it more juicy. Along with Al Baik Sauce.",
+        "price": 600,
+        "image": "https://example.com/images/zenga-burger.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "SIRACHA BURGER",
+        "description": "Our spicy take on value burger made from crunchy chicken fillet (chest pc), Spicy sauce, & lettuce.",
+        "price": 420,
+        "image": "/shop/Kababjees Fried Chicken/Menu/SIRACHABURGER.webp",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "CHICKEN CHIPOTLE BURGER",
+        "description": "Crispy, juicy scrumptious chicken patty (Thigh pc) along with lettuce and spicy chipotle sauce.",
+        "price": 570,
+        "image": "/shop/Kababjees Fried Chicken/Menu/CHICKENCHIPOTLEBURGER.webp",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "CHICKEN JALAPENO BURGER",
+        "description": "Crispy, juicy scrumptious chicken patty (Thigh pc) along with spicy tangy jalapeno sauce, lettuce and pcs of jalapeno.",
+        "price": 570,
+        "image": "/shop/Kababjees Fried Chicken/Menu/CHICKENJALAPENOBURGER.webp",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "THE MAJESTY",
+        "description": "Double crispy chicken patty with double goodness, along with a tinge of spicy goodness stuffed in a burger. A huge burger to satisfy your hunger.",
+        "price": 770,
+        "image": "/shop/Kababjees Fried Chicken/Menu/THEMAJESTY.webp",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "ZING CHICKEN STRIPS 4pcs",
+        "description": "Crunchy chicken strips, a must for kids.",
+        "price": 500,
+        "image": "/shop/Kababjees Fried Chicken/Menu/ZINGCHICKENSTRIPS4pcs.webp",
+        "availability": true,
+        "category": "Snacks",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "French Fries",
+        "description": "Soft Potato Wedges With A Crispy Exterior That Will Make Your Day!",
+        "price": 340,
+        "image": "/shop/Kababjees Fried Chicken/Menu/FrenchFries.webp",
+        "availability": true,
+        "category": "Sides",
+        "customization": [
+          {
+            "option": "Large",
+            "price": 100
+          }
+        ],
+        "featured": false
+      }
+    ],
+    "featured": true,
+    "reviews": 4.5
+  },
+  {
+    "name": "Domino's Pizza",
+    "image": "/shop/Domino's Pizza/Domino's Pizza.png",
+    "details": {
+      "timing": "11 AM - 11 PM",
+      "location": "Gulberg, Lahore",
+      "address": "Main Boulevard, Gulberg III, Lahore",
+      "description": "International pizza chain known for fast delivery and delicious pizzas.",
+      "comments": ["Amazing crust!", "Loved the Chicken Tikka flavor."]
+    },
+    "menu": [
+      {
+        "name": "Chicken Tikka Pizza",
+        "description": "Tikka chicken, onions, and green peppers on a classic crust.",
+        "price": 900,
+        "image": "/shop/Domino's Pizza/Menu/ChickenTikkaPizza.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [
+          {
+            "option": "Extra Cheese",
+            "price": 200
+          }
+        ],
+        "featured": true
+      },
+      {
+        "name": "BBQ Chicken Pizza",
+        "description": "Spicy chicken chunks with BBQ sauce and onions.",
+        "price": 950,
+        "image": "/shop/Domino's Pizza/Menu/BBQChickenPizza.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Creamy Tikka Pizza",
+        "description": "Chicken chunks, onions, and jalapeños on a cheese mayo base.",
+        "price": 1000,
+        "image": "/shop/Domino's Pizza/Menu/CreamyTikkaPizza.webp",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [
+          {
+            "option": "Extra Sauce",
+            "price": 100
+          }
+        ],
+        "featured": false
+      },
+      {
+        "name": "Tex-Mex Pizza",
+        "description": "Tex-Mex chicken, jalapeños, onions, and olives.",
+        "price": 1100,
+        "image": "/shop/Domino's Pizza/Menu/Tex-MexPizza.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "Super Cheese Pizza",
+        "description": "A triple cheese blend for cheese lovers.",
+        "price": 800,
+        "image": "/shop/Domino's Pizza/Menu/SuperCheesePizza.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [
+          {
+            "option": "Stuffed Crust",
+            "price": 300
+          }
+        ],
+        "featured": false
+      },
+      {
+        "name": "Hawaiian Chicken Pizza",
+        "description": "Chicken chunks paired with pineapple.",
+        "price": 900,
+        "image": "/shop/Domino's Pizza/Menu/HawaiianChickenPizza.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [],
+        "featured": false
+      }
+    ],
+    "featured": true,
+    "reviews": 4.8
+  },
+  {
+    "name": "14th Street Pizza",
+    "image": "/shop/14th Street Pizza/14th Street Pizza.png",
+    "details": {
+      "timing": "12 PM - 2 AM",
+      "location": "DHA Phase 6, Lahore",
+      "address": "Commercial Area, DHA Phase 6, Lahore",
+      "description": "Home of the original 20-inch pizza. Known for gourmet flavors and signature sauces.",
+      "comments": [
+        "Loved the crust and flavors!",
+        "Best late-night pizza spot."
+      ]
+    },
+    "menu": [
+      {
+        "name": "Ultimate Flaming Fajita",
+        "description": "Chicken fajita with oregano, paprika, onions, and capsicums.",
+        "price": 594.15,
+        "image": "/shop/14th Street Pizza/Menu/UltimateFlamingFajita.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [
+          {
+            "option": "Extra Cheese",
+            "price": 150
+          }
+        ],
+        "featured": true
+      },
+      {
+        "name": "The Real Tikka",
+        "description": "Tikka-flavored chunks with exotic spices, onions, and cheese.",
+        "price": 594.15,
+        "image": "/shop/14th Street Pizza/Menu/TheRealTikka.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Peri Tikka Fusion",
+        "description": "Peri-peri sauce with marinated chicken tikka, onions, and green pepper.",
+        "price": 594.15,
+        "image": "/shop/14th Street Pizza/Menu/PeriTikkaFusion.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Hot Chicken Mughlai",
+        "description": "Diced chicken Mughlai, onions, jalapenos, and creamy garlic dressing.",
+        "price": 594.15,
+        "image": "/shop/14th Street Pizza/Menu/HotChickenMughlai.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [
+          {
+            "option": "Extra Jalapenos",
+            "price": 100
+          }
+        ],
+        "featured": false
+      },
+      {
+        "name": "Eastern Seekh Kabab",
+        "description": "Chunks of seekh kabab, tomatoes, onions, jalapenos with BBQ sauce.",
+        "price": 594.15,
+        "image": "/shop/14th Street Pizza/Menu/EasternSeekhKabab.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Crispy Chicken",
+        "description": "Crunchy chicken with onions, tomatoes, green pepper, jalapenos, and chipotle sauce.",
+        "price": 1146.65,
+        "image": "/shop/14th Street Pizza/Menu/CrispyChicken.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "Creamy Chicken Delight",
+        "description": "Chicken fajita chunks, onions, green chilies, and tomatoes with creamy garlic sauce.",
+        "price": 594.15,
+        "image": "/shop/14th Street Pizza/Menu/CreamyChickenDelight.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Chicken Clucker",
+        "description": "Peri Peri sauce with spicy chicken, capsicum, onions, jalapenos, and hot buffalo drizzle.",
+        "price": 594.15,
+        "image": "/shop/14th Street Pizza/Menu/ChickenClucker.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [],
+        "featured": true
+      }
+    ],
+    "featured": true,
+    "reviews": 4.9
+  },
+  {
+    "name": "Johnny & Jugnu",
+    "image": "/shop/Johnny & Jugnu/Johnny & Jugnu.jpg",
+    "details": {
+      "timing": "11 AM - 3 AM",
+      "location": "Gulberg, Lahore",
+      "address": "Main Boulevard, Gulberg, Lahore",
+      "description": "A popular fast-food joint known for its crispy wraps, burgers, and wings.",
+      "comments": ["Love the wraps!", "Crunchiest wings ever!"]
+    },
+    "menu": [
+      {
+        "name": "WEHSHI",
+        "description": "Crispy & crunchy chicken burger to help you channel your wehshi side",
+        "price": 800,
+        "image": "/shop/Johnny & Jugnu/Menu/WEHSHI.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "TORTILLA WRAP",
+        "description": "Al Mashhoor wrap. 4 chicken tenderloin strips wrapped to perfection",
+        "price": 1000,
+        "image": "/shop/Johnny & Jugnu/Menu/TORTILLAWRAP.jpg",
+        "availability": true,
+        "category": "Wraps",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "SMOL WRAP",
+        "description": "Al Mashhoor wrap (but small) with 2 chicken tenderloin strips wrapped to perfection",
+        "price": 700,
+        "image": "/shop/Johnny & Jugnu/Menu/SMOLWRAP.jpg",
+        "availability": true,
+        "category": "Wraps",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "CHICKEN FILLET",
+        "description": "Fried, breaded, chicken burger. Juicy to the core, unlike anything else",
+        "price": 800,
+        "image": "/shop/Johnny & Jugnu/Menu/CHICKENFILLET.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "Crispy Wings",
+        "description": "Coated in a secret batter transforming ordinary wings into golden masterpieces with a signature CRUNCH.",
+        "price": 670,
+        "image": "/shop/Johnny & Jugnu/Menu/CrispyWings.jpg",
+        "availability": true,
+        "category": "Wings",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Gochu Wings",
+        "description": "Sweet meets heat! Crispy wings coated in a sweet and spicy gochujang glaze.",
+        "price": 720,
+        "image": "/shop/Johnny & Jugnu/Menu/GochuWings.jpg",
+        "availability": true,
+        "category": "Wings",
+        "customization": [],
+        "featured": false
+      }
+    ],
+    "featured": true,
+    "reviews": 4.8
+  },
+  {
+    "name": "Daily Deli CO",
+    "image": "/shop/Daily Deli CO/Daily Deli CO.webp",
+    "details": {
+      "timing": "00:00 - 04:30, 12:00 - 23:59",
+      "location": "Johar Town, Lahore",
+      "address": "Shop no. 33, Civic Centre, Mian Plaza, Johar Town, Lahore",
+      "description": "A premium eatery offering a variety of flavorful burgers and pasta, known for its rich, hearty meals.",
+      "comments": ["Amazing flavors!", "The Molten Lava Burger is a must-try."]
+    },
+    "menu": [
+      {
+        "name": "Chicken Alfredo Pasta",
+        "description": "Creamy and flavorful white Alfredo pasta with the perfect balance of spices and herbs.",
+        "price": 1195,
+        "image": "/shop/Daily Deli CO/Menu/ChickenAlfredoPasta.jpg",
+        "availability": true,
+        "category": "Pasta",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "DD Smokey House Burger",
+        "description": "Patty with cheese, fried onion rings, bologna slices, and smokehouse sauce.",
+        "price": 766,
+        "image": "/shop/Daily Deli CO/Menu/DDSmokeyHouseBurger.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "Chicken Thunder Fillet",
+        "description": "Cheese-filled burger with a flavorful chicken patty coated in breadcrumbs and topped with crunchy veggies.",
+        "price": 725,
+        "image": "/shop/Daily Deli CO/Menu/ChickenThunderFillet.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "DD Signature Burger",
+        "description": "Original Daily Deli style juicy burger with a tender patty, lettuce, tomatoes, mustard, pickles, and sweet relish.",
+        "price": 766,
+        "image": "/shop/Daily Deli CO/Menu/DDSignatureBurger.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Molten Lava Burger",
+        "description": "Customer favorite. Patty with cheese topped with mozzarella sticks. Choose your flavor.",
+        "price": 1218,
+        "image": "/shop/Daily Deli CO/Menu/MoltenLavaBurger.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [
+          {
+            "option": "Extra Mozzarella Sticks",
+            "price": 150
+          }
+        ],
+        "featured": true
+      },
+      {
+        "name": "Tangy Jalapeno Burger",
+        "description": "Patty with cheese, jalapenos, tomato, lettuce, and tangy sauce.",
+        "price": 766,
+        "image": "/shop/Daily Deli CO/Menu/TangyJalapenoBurger.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "THE SIMPLE BURGER (BEEF)",
+        "description": "Buttered buns, patty with cheese, served with spicy mayo.",
+        "price": 696,
+        "image": "/shop/Daily Deli CO/Menu/THESIMPLEBURGER(BEEF).jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "GLAZED ON (BEEF)",
+        "description": "Buttered buns, mayonnaise, and sweetened glazed onions.",
+        "price": 731,
+        "image": "/shop/Daily Deli CO/Menu/GLAZEDON(BEEF).jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "THE SUNNY ROCKET (BEEF)",
+        "description": "Buttered buns, rocket leaves, pickled onions, sundried tomatoes, and chipotle sauce.",
+        "price": 905,
+        "image": "/shop/Daily Deli CO/Menu/THESUNNYROCKET(BEEF).jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      }
+    ],
+    "featured": true,
+    "reviews": 4.9
+  },
+  {
+    "name": "Brim Burgers",
+    "image": "/shop/Brim Burgers/Brim Burgers.jpg",
+    "details": {
+      "timing": "00:00 - 03:00, 12:00 - 23:59",
+      "location": "Johar Town, Lahore",
+      "address": "Plot no: 330, Block -R, Main Boulevard, M.A. Johar Town",
+      "description": "A premium burger joint known for its signature sauces and crispy chicken fillets.",
+      "comments": [
+        "Amazing cheese sauce on everything!",
+        "Perfectly seasoned fries!"
+      ]
+    },
+    "menu": [
+      {
+        "name": "The Meltdown",
+        "description": "Hot cheese sauce with lettuce, onions & Brim burger sauce in a seeded potato bun.",
+        "price": 765,
+        "image": "/shop/Brim Burgers/Menu/TheMeltdown.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "Chicken Meltdown",
+        "description": "Hot cheese sauce, cheese slice, lettuce, onions, Brim Sauce & Signature Sauce in a seeded potato bun.",
+        "price": 930,
+        "image": "/shop/Brim Burgers/Menu/ChickenMeltdown.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "CHICKEN BRIM BOX",
+        "description": "Fries & Breaded Chicken Fillet covered with hot cheese sauce, BRIM Sauce, Signature Sauce & crispy roasted onions topped with spring onions.",
+        "price": 1095,
+        "image": "/shop/Brim Burgers/Menu/CHICKENBRIMBOX.jpg",
+        "availability": true,
+        "category": "Meals",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Classic Curly",
+        "description": "Curly Fries are the perfect blend of crispy fried potatoes and mouthwatering seasoning.",
+        "price": 490,
+        "image": "/shop/Brim Burgers/Menu/ClassicCurly.jpg",
+        "availability": true,
+        "category": "Sides",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Brim Burger",
+        "description": "Sliced cheese with Brim burger sauce & signature sauce in a seeded potato bun.",
+        "price": 715,
+        "image": "/shop/Brim Burgers/Menu/BrimBurger.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "Fiery Brimstone",
+        "description": "Jalapenos with cheese, lettuce, signature sauce & brim burger sauce in a seeded potato bun.",
+        "price": 765,
+        "image": "/shop/Brim Burgers/Menu/FieryBrimstone.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      }
+    ],
+    "featured": true,
+    "reviews": 4.7
+  },
+  {
+    "name": "Ranchers",
+    "image": "/shop/Ranchers/Ranchers.jpg",
+    "details": {
+      "timing": "12:00 - 23:59",
+      "location": "Faisal Town, Lahore",
+      "address": "Plot 20, Faisal Town, Lahore",
+      "description": "A vibrant eatery known for its unique fusion of American and local flavors. Famous for its hearty burgers, pizzas, and signature dishes.",
+      "comments": [
+        "Delicious and filling meals!",
+        "Loved the unique flavors in the burgers."
+      ]
+    },
+    "menu": [
+      {
+        "name": "Cowboy Burger",
+        "description": "Single BBQ Grilled Chicken Fillet, Topped with Cheese, Jalapeño, Chicken Sausages, and Fried Onion Rings.",
+        "price": 599,
+        "image": "/shop/Ranchers/Menu/CowboyBurger.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": true
+      },
+      {
+        "name": "Crown Pizza",
+        "description": "Beef Seekh Kabab Corners: Double Cheese, Chicken Tikka, Fajita Mix, Sausages, Black Olives, Veggies, Crown Sauce.",
+        "price": 1499,
+        "image": "/shop/Ranchers/Menu/CrownPizza.jpg",
+        "availability": true,
+        "category": "Pizzas",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Bronco",
+        "description": "Juicy Zinger, smothered in hot sauce, delivering a scorching hot and sour taste.",
+        "price": 599,
+        "image": "/shop/Ranchers/Menu/Bronco.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Mighty Rodeo Beef Burger",
+        "description": "Indulge in our Mozzarella Inferno Burger, featuring two grilled Beef patty stuffed with melted mozzarella cheese, topped with an additional cheese slice, crispy Jalapeños, and tangy salsa sauce.",
+        "price": 899,
+        "image": "/shop/Ranchers/Menu/MightyRodeoBeefBurger.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Big Ben Burger",
+        "description": "Crispy boneless thigh, coated in fluffy flour, topped with iceberg lettuce, juicy tomato, onion, melted cheese, and pink sauce, all served on a soft unseeded bun.",
+        "price": 899,
+        "image": "/shop/Ranchers/Menu/BigBenBurger.jpg",
+        "availability": true,
+        "category": "Burgers",
+        "customization": [],
+        "featured": false
+      },
+      {
+        "name": "Frizza",
+        "description": "Indulge in our heavily loaded fries, featuring crispy fries topped with grilled chicken, roasted capsicum, spicy sauce, creamy mayonnaise, and melted pizza cheese.",
+        "price": 549,
+        "image": "/shop/Ranchers/Menu/Frizza.jpg",
+        "availability": true,
+        "category": "Sides",
+        "customization": [],
+        "featured": false
+      }
+    ],
+    "featured": true,
+    "reviews": 4.8
+  }
 ]
