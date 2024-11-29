@@ -1,8 +1,8 @@
-import Restaurants from "@/components/Restaurants";
+import Menu from "@/components/Menu";
 import React from "react";
 
 const testing = () => {
-  return <Restaurants></Restaurants>;
+  return <Menu></Menu>;
 };
 
 export default testing;
