@@ -6,7 +6,7 @@ export default async function handler(req,res){
     await dbConnect();
     if(req.method==="GET"){
         try {
-            const Shops=await Shop.find({},{name:1,image:1,"details.timing":1,"details.location":1,reviews:1});
+            const Shops=await Shop.find({},{_id:1,name:1,image:1,"details.timing":1,"details.location":1,reviews:1,featured:1});
             res.status(200).json({Shops:Shops});
         } catch (error) {
             res.status(500).json({error:error});

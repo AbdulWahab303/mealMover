@@ -1,7 +1,8 @@
 import React from "react";
 import RestaurantCard from "./RestaurantCard";
+import Link from "next/link";
 
-const Restaurants = () => {
+const Restaurants = (props) => {
   // Array of restaurant details
   const restaurants = [
     {
@@ -40,15 +41,16 @@ const Restaurants = () => {
 
   return (
     <div className="grid my-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      {restaurants.map((restaurant) => (
-        <RestaurantCard
-          key={restaurant.id}
-          title={restaurant.title}
+      {props.data.map((restaurant) => (
+        <Link href={`/restaurants/${restaurant._id}`}><RestaurantCard
+          key={restaurant._id}
+          title={restaurant.name}
           image={restaurant.image}
-          location={restaurant.location}
-          timing={restaurant.timing}
+          location={restaurant.details.location}
+          timing={restaurant.details.timing}
           reviews={restaurant.reviews}
         />
+        </Link>
       ))}
     </div>
   );

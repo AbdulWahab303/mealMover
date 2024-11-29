@@ -4,8 +4,9 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero";
 import Restaurants from "@/components/Restaurants";
 import Categories from "@/components/Catergories";
+import axios from "axios";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
       <Header />
@@ -20,9 +21,24 @@ export default function Home() {
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-8">
           Featured Restaurants
         </h1>
-        <Restaurants />
+        <Restaurants data={props.shopData}></Restaurants>
       </div>
       <Footer></Footer>
     </>
   );
+}
+
+
+
+export async function getStaticProps() {
+
+  const response=await axios.get('http://localhost:3000/api/restraunts');
+  const restraunts=response.data.Shops.filter((val)=>val.featured);
+
+  return{
+    props:{
+      shopData:restraunts
+    },
+    revalidate:100
+  }  
 }
