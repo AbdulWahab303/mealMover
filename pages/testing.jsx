@@ -1,8 +1,8 @@
-import { MenuItems } from "@/components/MenuItems";
+import Menu from "@/components/Menu";
 import React from "react";
 
 const testing = () => {
-  return <MenuItems></MenuItems>;
+  return <Menu></Menu>;
 };
 
 export default testing;
