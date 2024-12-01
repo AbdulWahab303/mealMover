@@ -1,8 +1,56 @@
-import React from "react";
+import React, { useRef,useState } from "react";
 import Footer from "@/components/Footer";
+import Link from "next/link";
+import axios from "axios";
+import { useRouter } from "next/navigation";
+import { useToast } from "@/hooks/use-toast";
 
 
 const Signup = () => {
+  const {toast}=useToast();
+  const router=useRouter();
+  const [formData,setFormData]=useState({
+    firstName:"",
+    lastName:"",
+    username:"",
+    email:"",
+    password:"",
+    contact:"",
+    street:"",
+    city:"",
+    state:"",
+    zip:"",
+    country:"",
+    houseNo:""
+  });
+
+
+  const handleChange=(e)=>{
+    const {name,value}=e.target;
+    setFormData((prev)=>{
+      return {...prev,[name]:value}
+    })
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('/api/sign-up', { formData: formData });
+  
+      if (response.status === 200) {
+        toast({
+          title: "Account Created Successfully",
+          description: "Redirecting to Login",
+        });
+        router.push('/login');
+      }
+  
+    } catch (error) {
+      console.log("Error during registration:", error);
+    }
+  };
+  
+
   return (
 <>
     <div className="min-h-screen bg-yellow-50 flex flex-col items-center justify-center">
@@ -38,11 +86,14 @@ const Signup = () => {
                 First Name
               </label>
               <input
+              name="firstName"
                 type="text"
                 id="firstName"
                 placeholder="First Name"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
                 required
+                onChange={handleChange}
+                value={formData.firstName}
               />
             </div>
             <div>
@@ -53,11 +104,14 @@ const Signup = () => {
                 Last Name
               </label>
               <input
+              name="lastName"
                 type="text"
                 id="lastName"
                 placeholder="Last Name"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
                 required
+                onChange={handleChange}
+                value={formData.lastName}
               />
             </div>
           </div>
@@ -71,11 +125,14 @@ const Signup = () => {
               Username
             </label>
             <input
+            name="username"
               type="text"
               id="username"
               placeholder="Enter your Username"
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
               required
+              onChange={handleChange}
+              value={formData.username}
             />
           </div>
 
@@ -88,11 +145,14 @@ const Signup = () => {
               Email
             </label>
             <input
+            name="email"
               type="email"
               id="email"
               placeholder="Enter your Email"
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
               required
+              onChange={handleChange}
+              value={formData.email}
             />
           </div>
 
@@ -105,11 +165,14 @@ const Signup = () => {
               Password
             </label>
             <input
+            name="password"
               type="password"
               id="password"
               placeholder="Enter your Password"
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
               required
+              onChange={handleChange}
+              value={formData.password}
             />
           </div>
 
@@ -122,18 +185,137 @@ const Signup = () => {
               Contact Number
             </label>
             <input
+            name="contact"
               type="tel"
               id="contact"
               placeholder="Enter your Contact Number"
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
               required
+              onChange={handleChange}
+              value={formData.contact}
             />
+          </div>
+
+
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <label
+                htmlFor="houseNo"
+                className="block text-gray-600 font-medium mb-1"
+              >
+                House No
+              </label>
+              <input
+              name="houseNo"
+                type="text"
+                id="houseNo"
+                placeholder="H#no"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
+                required
+                onChange={handleChange}
+                value={formData.houseNo}
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="street"
+                className="block text-gray-600 font-medium mb-1"
+              >
+                Street
+              </label>
+              <input
+              name="street"
+                type="text"
+                id="street"
+                placeholder="street"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
+                required
+                onChange={handleChange}
+                value={formData.street}
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <label
+                htmlFor="zip"
+                className="block text-gray-600 font-medium mb-1"
+              >
+                Zip
+              </label>
+              <input
+              name="zip"
+                type="text"
+                id="zip"
+                placeholder="Zip"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
+                required
+                onChange={handleChange}
+                value={formData.zip}
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="state"
+                className="block text-gray-600 font-medium mb-1"
+              >
+                State
+              </label>
+              <input
+              name="state"
+                type="text"
+                id="state"
+                placeholder="state"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
+                required
+                onChange={handleChange}
+                value={formData.state}
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <label
+                htmlFor="city"
+                className="block text-gray-600 font-medium mb-1"
+              >
+                City
+              </label>
+              <input
+              name="city"
+                type="text"
+                id="city"
+                placeholder="city"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
+                required
+                onChange={handleChange}
+                value={formData.city}
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="country"
+                className="block text-gray-600 font-medium mb-1"
+              >
+                Country
+              </label>
+              <input
+              name="country"
+                type="text"
+                id="country"
+                placeholder="country"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
+                required
+                onChange={handleChange}
+                value={formData.country}
+              />
+            </div>
           </div>
 
           {/* Signup Button */}
           <button
-            type="submit"
             className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 rounded-md focus:outline-none focus:ring focus:ring-yellow-300"
+            onClick={handleSubmit}
           >
             Sign Up
           </button>
@@ -142,9 +324,9 @@ const Signup = () => {
         {/* Login Redirect */}
         <p className="mt-4 text-center text-gray-600">
           Already have an account?{" "}
-          <a href="/login" className="text-yellow-500 hover:underline">
+          <Link href="/login" className="text-yellow-500 hover:underline">
             Login
-          </a>
+          </Link>
         </p>
       </div>
     </div>

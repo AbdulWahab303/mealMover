@@ -9,7 +9,7 @@ const Menu = (props) => {
         {
           props.data.map((val)=>{
             return (
-              <MenuItems menuItem={val}/>
+              <MenuItems menuItem={val} shopId={props.shopId}/>
             )
           })
         }

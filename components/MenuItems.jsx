@@ -2,12 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { useCart } from "@/context/cartContext";
 import { useToast } from "@/hooks/use-toast";
+import { useSession } from "next-auth/react";
 
 export const MenuItems = (props) => {
-
+  const {data:session}=useSession();
   const {toast}=useToast();
   
-  const {addToCart}=useCart();
+  const {addToCart,shopCheck}=useCart();
   return (
     <div className="flex shadow border-yellow-200 border border-solid shadow-yellow-200 w-3/4 h-36 rounded-xl justify-between space-x-3 group hover:scale-105 ease-in-out duration-300 hover:shadow hover:bg-yellow-100/20 hover:shadow-yellow-300 hover:border-none mx-auto">
       <div className="flex items-center pl-4 bg-red">
@@ -37,12 +38,29 @@ export const MenuItems = (props) => {
         <button className={
           "relative px-3 py-3 font-bold text-white transition-all duration-500 bg-yellow-300 border-1  border-yellow-600 rounded-xl overflow-hidden group hover:bg-yellow-400 hover:border-orange-400"
         } onClick={()=>{
-          toast({
-            title:"Added to Cart",
-            description:props.menuItem.name
-          });
-          addToCart(props);
-          }}>
+            if(session){
+              if(shopCheck(props.shopId)){
+              toast({
+                title:"Added to Cart",
+                description:props.menuItem.name
+              });
+              addToCart(props,props.shopId);
+            }
+            else{
+              toast({
+                title:"Multiple Orders Not Allowed",
+                description:"Select from only one Shop"
+              })
+            }
+            }
+            else{
+              toast({
+                title:"Login Required !",
+                description:"Create or Login into to your Account for Order Processing"
+              })
+            }
+            }}
+            >
           Add to Cart
         </button>
       </div>

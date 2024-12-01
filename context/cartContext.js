@@ -4,15 +4,21 @@ const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
+  const [singleShop,setSingleShop]=useState(null);
 
-  // Add an item to the cart
-  const addToCart = (item) => {
+  const addToCart = (item,id) => {
+    console.log(cartItems);
+    console.log(item);
+    if(cartItems.length===0){
+      setSingleShop(id);
+      
+    }
     setCartItems((prevCart) => {
       const existingItem = prevCart.find((cartItem) => cartItem._id === item.menuItem._id);
 
       if (existingItem) {
         return prevCart.map((cartItem) =>
-          cartItem._id === item._id
+          cartItem._id === item.menuItem._id
             ? { ...cartItem, quantity: cartItem.quantity + 1 }
             : cartItem
         );
@@ -22,6 +28,9 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  const shopCheck=(id)=>{
+    return (singleShop?id===singleShop:true);
+  }
   const addSameItem=(id)=>{
     setCartItems((prev)=>{
         return prev.map((val)=>{
@@ -49,6 +58,9 @@ export const CartProvider = ({ children }) => {
   }
   // Remove an item from the cart
   const removeFromCart = (id) => {    
+    if(cartItems.length===1){
+      setSingleShop(null);
+    }
     setCartItems((prevCart) =>
       prevCart.filter((cartItem) => cartItem._id !== id)
     );
@@ -56,6 +68,7 @@ export const CartProvider = ({ children }) => {
 
   // Clear the cart
   const clearCart = () => {
+    setSingleShop(null);
     setCartItems([]);
   };
 
@@ -66,7 +79,7 @@ export const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cartItems, addToCart, removeFromCart, clearCart,totalPrice,addSameItem,removeSameItem }}
+      value={{ cartItems, addToCart, removeFromCart, clearCart,totalPrice,addSameItem,removeSameItem,shopCheck,singleShop }}
     >
       {children}
     </CartContext.Provider>

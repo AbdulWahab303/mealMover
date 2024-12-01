@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
 const OrderSchema = new mongoose.Schema({
-  userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
   shopId: { type: mongoose.Schema.Types.ObjectId, ref: "Shop", required: true },
   shopName: String,
   items: [
@@ -10,8 +9,8 @@ const OrderSchema = new mongoose.Schema({
       name: String,
       quantity: Number,
       price: Number,
-      totalPrice: Number,
       customizations: [String],
+      image:String,
     },
   ],
   totalPrice: Number,
@@ -23,7 +22,10 @@ const OrderSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  paymentMethod:{
+    type:String,
+  },
 });
 
-const Order = mongoose.model("Order", OrderSchema);
+const Order =(mongoose.models.Order) ||(mongoose.model("Order", OrderSchema));
 export default Order;

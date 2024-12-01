@@ -3,8 +3,11 @@ import Header from "@/components/Header";
 import Restaurants from "@/components/Restaurants";
 import React from "react";
 import axios from "axios";
+import { useSession } from "next-auth/react";
 
 const restaurants = (props) => {
+
+  const {data:session}=useSession();
   return (
     <>
       <Header></Header>

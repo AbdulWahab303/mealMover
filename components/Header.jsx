@@ -15,8 +15,12 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { useSession,signOut } from "next-auth/react";
 
-const Header = () => {
+const Header = (props) => {
+  const {data:session}=useSession();
+  console.log(session);
+  
   return (
     <header className="bg-white shadow-md">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">
@@ -35,41 +39,51 @@ const Header = () => {
           </div>
 
           <nav className="flex space-x-6">
-            <a
+            <Link
               href="/"
               className="text-gray-700 hover:text-yellow-300 border-b-2 border-transparent hover:border-yellow-300 transition-all duration-500"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/restaurants"
               className="text-gray-700 hover:text-yellow-300 border-b-2 border-transparent hover:border-yellow-300 transition-all duration-500"
             >
               Restaurants
-            </a>
-            <a
+            </Link>
+            <Link
               href="/cuisines"
               className="text-gray-700 hover:text-yellow-300 border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300"
             >
               Cuisines
-            </a>
+            </Link>
           </nav>
         </div>
-        <div className="flex justify-center mx-6 pr-6">
+        {/* <div className="flex justify-center mx-6 pr-6">
           <SearchBar />
-        </div>
+        </div> */}
 
         {/* Right Section with Login, Sign Up, Cart and Profile */}
 
         <div className="flex items-center space-x-6">
+          {
+            session?(
+                <Button onClick={()=>signOut({
+                  callbackUrl:"/"
+                })}>Logout</Button>
+            ):(
+              <>
           <Link href="/login">
             <Button>Login</Button>
           </Link>
           <Link href="/signup">
             <Button>Sign Up</Button>
           </Link>
+          </>
+            )
+          }
 
-          <a href="/cart" className="text-gray-700 hover:text-yellow-300">
+          <Link href="/cart" className="text-gray-700 hover:text-yellow-300">
             Cart
             <Image
               src="/cart.svg"
@@ -79,10 +93,10 @@ const Header = () => {
               objectFit="cover"
               className="fill-current"
             />
-          </a>
+          </Link>
           <Sheet>
       <SheetTrigger asChild>
-        <Uibutton><svg
+        <Uibutton disabled={!session}><svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -108,18 +122,18 @@ const Header = () => {
       <SheetContent>
         {/* Header */}
         <SheetHeader>
-          <SheetTitle className='mt-8'> Welcome, Pedro Duarte</SheetTitle>
+          <SheetTitle className='mt-8'> Welcome, {session?session.user.name:''}</SheetTitle>
         </SheetHeader>
 
         {/* User Information */}
         <div className="grid gap-4 py-4">
           <div className="flex flex-col items-start">
             <p className="text-sm text-gray-600">Username:</p>
-            <p className="font-semibold">@peduarte</p>
+            <p className="font-semibold">{session?session.user.username:''}</p>
           </div>
           <div className="flex flex-col items-start">
             <p className="text-sm text-gray-600">Email:</p>
-            <p className="font-semibold">pedro.duarte@example.com</p>
+            <p className="font-semibold">{session?session.user.email:''}</p>
           </div>
         </div>
 

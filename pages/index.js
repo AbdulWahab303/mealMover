@@ -5,11 +5,15 @@ import HeroSection from "@/components/Hero";
 import Restaurants from "@/components/Restaurants";
 import Categories from "@/components/Catergories";
 import axios from "axios";
+import { useSession } from "next-auth/react";
 
 export default function Home(props) {
+
+  const {data:session}=useSession();
+  
   return (
     <>
-      <Header />
+      <Header/>
       <HeroSection></HeroSection>
       <div className="container mx-auto px-2 py-6">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-6">

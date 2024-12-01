@@ -1,7 +1,54 @@
-import React from "react";
+import React, { useRef } from "react";
 import Footer from "@/components/Footer";
+import { useRouter } from "next/navigation";
+import {signIn} from 'next-auth/react';
+
 
 const Login = () => {
+
+  const router=useRouter();
+  const loginDetails=useRef({
+    email:"",
+    password:""
+  });
+
+
+
+  const handleChange=(e)=>{
+    const {name,value}=e.target;
+    loginDetails.current[name]=value;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const { email, password } = loginDetails.current;
+
+      // Using NextAuth's signIn function to authenticate the user
+      const result = await signIn("credentials", {
+        redirect: false,
+        email,
+        password,
+      });
+
+      if (result?.error) {
+        alert("Login failed. Incorrect email or password.");
+      } else if (result?.url) {
+        // Redirect to the dashboard if login is successful
+        router.push("/");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("Login failed. Please try again.");
+    } finally {
+      console.log("DONE");
+      
+    }
+  };
+
+
+
   return (
 <>
 <div className="min-h-screen bg-yellow-50 flex flex-col items-center justify-center">
@@ -71,11 +118,13 @@ const Login = () => {
               Email
             </label>
             <input
+              name="email"
               type="email"
               id="email"
               placeholder="Enter your email"
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
               required
+              onChange={handleChange}
             />
           </div>
 
@@ -88,16 +137,19 @@ const Login = () => {
               Password
             </label>
             <input
+              name="password"
               type="password"
               id="password"
               placeholder="Enter your password"
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400"
               required
+              onChange={handleChange}
             />
           </div>
 
           {/* Login Button */}
           <button
+            onClick={handleSubmit}
             type="submit"
             className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 rounded-md focus:outline-none focus:ring focus:ring-yellow-300"
           >

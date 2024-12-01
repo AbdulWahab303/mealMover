@@ -36,7 +36,7 @@ const RestaurantPage = (props) => {
           </div>
         </div>
       </div>
-      <Menu data={props.restaurant.menu}/>
+      <Menu data={props.restaurant.menu} shopId={props.restaurant._id}/>
       <Footer />
     </>
   );
