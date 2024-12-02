@@ -40,7 +40,7 @@ const Footer = () => {
             Partner with us
           </a>
           <a
-            href="#"
+            href="/info"
             className="text-gray-700 hover:text-yellow-300 border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300 text-center"
           >
             Help Center
