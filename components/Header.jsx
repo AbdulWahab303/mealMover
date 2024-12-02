@@ -16,16 +16,16 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { useSession,signOut } from "next-auth/react";
+import { useCart } from "@/context/cartContext";
 
 const Header = (props) => {
   const {data:session}=useSession();
-  console.log(session);
+  const {cartCount}=useCart();
   
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-yellow-200 shadow-lg">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-8">
-          {/* Logo */}
           <div className="-my-10 pl-0 text-2xl font-bold text-yellow-300">
             <Link href="/">
               <Image
@@ -52,18 +52,13 @@ const Header = (props) => {
               Restaurants
             </Link>
             <Link
-              href="/cuisines"
+              href="/search"
               className="text-gray-700 hover:text-yellow-300 border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300"
             >
-              Cuisines
+              Search
             </Link>
           </nav>
         </div>
-        {/* <div className="flex justify-center mx-6 pr-6">
-          <SearchBar />
-        </div> */}
-
-        {/* Right Section with Login, Sign Up, Cart and Profile */}
 
         <div className="flex items-center space-x-6">
           {
@@ -93,6 +88,9 @@ const Header = (props) => {
               objectFit="cover"
               className="fill-current"
             />
+            <span className="top-10 right-98 bg-yellow-700 text-white text-xs font-bold rounded-full px-2 py-0.5">
+              {cartCount}
+            </span>
           </Link>
           <Sheet>
       <SheetTrigger asChild>
@@ -120,12 +118,10 @@ const Header = (props) => {
             </svg></Uibutton>
       </SheetTrigger>
       <SheetContent>
-        {/* Header */}
         <SheetHeader>
           <SheetTitle className='mt-8'> Welcome, {session?session.user.name:''}</SheetTitle>
         </SheetHeader>
 
-        {/* User Information */}
         <div className="grid gap-4 py-4">
           <div className="flex flex-col items-start">
             <p className="text-sm text-gray-600">Username:</p>
@@ -137,7 +133,6 @@ const Header = (props) => {
           </div>
         </div>
 
-        {/* Navigation Options */}
         <div className="grid gap-2 py-4">
           <Link href="/user-profile">
             <Uibutton variant="outline" className="w-full">
@@ -156,7 +151,6 @@ const Header = (props) => {
           </Link>
         </div>
 
-        {/* Close Button */}
         <SheetFooter>
           <SheetClose asChild>
             <Uibutton variant="ghost">Close</Uibutton>

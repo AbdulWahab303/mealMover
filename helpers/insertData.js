@@ -15,7 +15,7 @@ const init = async () => {
 
     const dataPath = path.join(__dirname, "shopsData.json");
     const restaurants = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
-
+    await Shop.deleteMany({});
     await Shop.insertMany(restaurants);
     console.log("Data saved successfully.");
 

@@ -36,6 +36,7 @@ const CartPage = (props) => {
         const response=await axios.post('/api/submit-order',{order:cartItems,shopId:singleShop,totalPrice:totalPrice});
         if(response.data.orderId){
           router.push(`/confirmation?order=${response.data.orderId}`);
+          clearCart();
         }        
         
     } catch (error) {

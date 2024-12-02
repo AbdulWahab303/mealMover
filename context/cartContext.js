@@ -5,8 +5,11 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [singleShop,setSingleShop]=useState(null);
+  const [cartCount,setCartCount]=useState(0);
+
 
   const addToCart = (item,id) => {
+    setCartCount((prev)=>prev+1);
     console.log(cartItems);
     console.log(item);
     if(cartItems.length===0){
@@ -79,7 +82,7 @@ export const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cartItems, addToCart, removeFromCart, clearCart,totalPrice,addSameItem,removeSameItem,shopCheck,singleShop }}
+      value={{ cartItems, addToCart, removeFromCart, clearCart,totalPrice,addSameItem,removeSameItem,shopCheck,singleShop,cartCount}}
     >
       {children}
     </CartContext.Provider>
