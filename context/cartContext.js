@@ -89,7 +89,6 @@ export const CartProvider = ({ children }) => {
   );
 };
 
-// Hook to use the CartContext
 export const useCart = () => {
   return useContext(CartContext);
 };

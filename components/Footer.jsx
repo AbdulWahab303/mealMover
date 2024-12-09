@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -33,30 +34,30 @@ const Footer = () => {
 
         {/* Links Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-8 gap-4 text-center sm:text-left">
-          <a
-            href="#"
+          <Link
+            href="/info"
             className="text-gray-700 hover:text-yellow-300 border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300 text-center"
           >
             Partner with us
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/info"
             className="text-gray-700 hover:text-yellow-300 border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300 text-center"
           >
             Help Center
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/info"
             className="text-gray-700 hover:text-yellow-300 border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300 text-center"
           >
             Privacy Policy
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/info"
             className="text-gray-700 hover:text-yellow-300 border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300 text-center"
           >
             Terms and Conditions
-          </a>
+          </Link>
         </div>
 
         {/* Copyright */}

@@ -74,7 +74,7 @@ export async function getStaticProps({ params }) {
     props: {
       restaurant:details,
     },
-    revalidate: 60, // ISR: Re-generate every 60 seconds
+    revalidate: 60,
   };
 }
 
